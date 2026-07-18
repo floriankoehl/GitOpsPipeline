@@ -96,7 +96,7 @@ function App() {
       <header className="hero">
         <div>
           <p className="eyebrow">Lebenslauf</p>
-          <h1>Florian Köhl</h1>
+          <h1>Florian Valentin Köhl</h1>
           <p className="intro">Informatikstudent mit Erfahrung in Webentwicklung, Lehre und Design.</p>
         </div>
         <div className="monogram" aria-hidden="true">FK</div>
