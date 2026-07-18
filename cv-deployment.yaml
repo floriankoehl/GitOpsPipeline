@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: florian-cv
+spec:
+    replicas: 1
+    selector: 
+      matchLabels:
+        app: florian-cv
+    template:
+      metadata:
+        labels:
+          app: florian-cv
+      spec:
+        containers:
+          - name: florian-cv
+            image: ghcr.io/floriankoehl/gitopspipeline:v1
+            ports:
+              - containerPort: 80
+        imagePullSecrets:
+          - name: ghcr-secret
